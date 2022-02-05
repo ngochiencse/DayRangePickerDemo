@@ -9,5 +9,6 @@ target 'test' do
   pod 'JTAppleCalendar'
   pod 'RxSwift'
   pod 'RxCocoa'
-
+  pod 'NSObject+Rx'
+  pod 'SwiftDate'
 end

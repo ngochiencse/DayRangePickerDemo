@@ -1,30 +1,39 @@
 PODS:
   - JTAppleCalendar (8.0.3)
+  - "NSObject+Rx (5.2.2)":
+    - RxSwift (~> 6.2)
   - RxCocoa (6.5.0):
     - RxRelay (= 6.5.0)
     - RxSwift (= 6.5.0)
   - RxRelay (6.5.0):
     - RxSwift (= 6.5.0)
   - RxSwift (6.5.0)
+  - SwiftDate (6.3.1)
 
 DEPENDENCIES:
   - JTAppleCalendar
+  - "NSObject+Rx"
   - RxCocoa
   - RxSwift
+  - SwiftDate
 
 SPEC REPOS:
   trunk:
     - JTAppleCalendar
+    - "NSObject+Rx"
     - RxCocoa
     - RxRelay
     - RxSwift
+    - SwiftDate
 
 SPEC CHECKSUMS:
   JTAppleCalendar: 932cadea40b1051beab10f67843451d48ba16c99
+  "NSObject+Rx": 61cf1f7306a73dcef8b36649198af0813ec18dfd
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SwiftDate: 72d28954e8e1c6c1c0f917ccc8005e4f83c7d4b2
 
-PODFILE CHECKSUM: a07cbf8dc9430c9fd2aa550c94d1d163b04b5271
+PODFILE CHECKSUM: 49e275a40861d493863054abfee10967e9e134fb
 
 COCOAPODS: 1.11.2
