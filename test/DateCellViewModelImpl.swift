@@ -11,7 +11,7 @@ import RxCocoa
 import JTAppleCalendar
 
 class DateCellViewModelImpl: DateCellViewModel {
-    let date: BehaviorRelay<Date?> = BehaviorRelay(value: nil)
+    let dateText: BehaviorRelay<String?> = BehaviorRelay(value: nil)
     let day: BehaviorRelay<DaysOfWeek?> = BehaviorRelay(value: nil)
     let isSelected: BehaviorRelay<Bool> = BehaviorRelay(value: false)
     let selectedPosition: BehaviorRelay<SelectionRangePosition> = BehaviorRelay(value: SelectionRangePosition.none)

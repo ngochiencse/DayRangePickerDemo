@@ -82,7 +82,7 @@ extension ViewController: JTACMonthViewDelegate {
         guard let viewModel = viewModel else { return }
         guard let cell = cell as? DateCell  else { return }
         let cellViewModel = cell.viewModel
-        cellViewModel?.date.accept(cellState.date)
+        cellViewModel?.dateText.accept(cellState.text)
         cellViewModel?.day.accept(cellState.day)
         cellViewModel?.dateBelongsTo.accept(cellState.dateBelongsTo)
         let selectedPosition =

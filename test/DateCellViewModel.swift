@@ -11,7 +11,7 @@ import RxCocoa
 import JTAppleCalendar
 
 protocol DateCellViewModel: AnyObject {
-    var date: BehaviorRelay<Date?> { get }
+    var dateText: BehaviorRelay<String?> { get }
     var day: BehaviorRelay<DaysOfWeek?> { get }
     var isSelected: BehaviorRelay<Bool> { get }
     var selectedPosition: BehaviorRelay<SelectionRangePosition> { get }

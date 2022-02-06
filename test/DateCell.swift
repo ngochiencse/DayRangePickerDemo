@@ -21,9 +21,7 @@ class DateCell: JTACDayCell {
         guard let viewModel = viewModel else { return }
         
         do {
-            let disposable = viewModel.date.map { (date) -> String? in
-                return date?.toFormat("dd")
-            }.bind(to: dateLabel.rx.text)
+            let disposable = viewModel.dateText.bind(to: dateLabel.rx.text)
             disposable.disposed(by: rx.disposeBag)
             disposables.append(disposable)
         }
@@ -36,14 +34,6 @@ class DateCell: JTACDayCell {
             disposable.disposed(by: rx.disposeBag)
             disposables.append(disposable)
         }
-
-//        do {
-//            let disposable = viewModel.isSelected.map({ isSelected in
-//                return !isSelected
-//            }).bind(to: selectedView.rx.isHidden)
-//            disposable.disposed(by: rx.disposeBag)
-//            disposables.append(disposable)
-//        }
 
         do {
             let disposable = viewModel.selectedPosition.observe(on: MainScheduler.instance)
