@@ -1,0 +1,2 @@
+# DayRangePickerDemo
+This repository hold sample code for blog post: [Implement range day calendar picker using JTAppleCalendar](https://hienphamit.com/implement-range-day-calendar-picker-using-jtapplecalendar/)
